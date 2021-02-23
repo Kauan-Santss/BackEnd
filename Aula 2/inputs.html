@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs HTML</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: sans-serif;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: #6495ED;
+            padding: 20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+<form method="" action="">
+
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Ex: Jusefino Alcantra" required>
+
+    <label for="idade">Idade</label>
+    <input type="number" name="idade" id="idade" placeholder="Ex: 18" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email" placeholder="Ex: fulano@uol.com" required>
+
+    <label for="telefone">Telefone</label>
+    <input type="tel" name="telefone" id="telefone" placeholder="(11) 91111-2222">
+
+    <p style="margin-bottom: 0px;">Sexo</p>
+        <div>
+            <input type="radio" id="sexoM" value="M" name="sexo">
+            <label for="sexoM">Masculino</label>
+        </div>
+
+        <div>
+            <input type="radio" id="sexoF" value="F" name="sexo">
+            <label for="sexoF">Feminino</label>
+        </div>
+
+        <div>
+            <input type="radio" id="sexoO" value="O" name="sexo">
+            <label for="sexoO">Outros</label>
+        </div>
+
+    <p style="margin-bottom: 0px;">Hobbys</p>
+    <div>
+        <input type="checkbox" value="sim" id="cantar" name="cantar">
+        <label for="cantar">Cantar</label>
+    </div>
+
+    <div>
+        <input type="checkbox" value="sim" id="dancar" name="dancar">
+        <label for="dancar">Dançar</label>
+    </div>
+
+    <div>
+        <input type="checkbox" value="sim" id="programar" name="programar">
+        <label for="programar">Programar</label>
+    </div>
+
+    <button>Enviar</button>
+    <button type="reset">Limpar</button>
+
+
+</form>
+
+</body>
+</html>
